@@ -1,4 +1,4 @@
-# EEE310-assignment-1
+# Assignment 1
 ## Part A
 Write a C Program to read an integer from the screen and decide if it is odd or even.
 
@@ -11,9 +11,9 @@ Note: The programme should start:
 int main() {
 
     int number;
-
+    
     printf("\nEnter an integer: ");
-
+    
     scanf("%d", &number);
 
 The output should be like this (if 11 was the number input). 
@@ -33,9 +33,9 @@ The standard form of a quadratic equation is:
 The term b^2-4ac is known as the discriminant of a quadratic equation. It tells the nature of the roots.
 
 	1) If the discriminant is greater than 0, the roots are real and different.
-
+	
 	2) If the discriminant is equal to 0, the roots are real and equal.
-
+	
 	3) If the discriminant is less than 0, the roots are complex and different.
 
 Write a C program to find when the discriminant is greater than or equal to 0 and print the roots to 3 decimal places. Your program should output to the screen the largest root first if they are not equal. If the discriminant is less than zero print to screen “The roots are complex and different”.
@@ -57,15 +57,15 @@ Please start the programme like this:
 int main() {
 
     int operator;
-
+    
     float first, second;
-
+    
     printf("\nEnter an operator: \n 1 for+,\n 2 for -,\n 3 for *,\n 4 for /\n");
-
+    
     scanf("%i", &operator);     
-
+    
     printf("\nEnter two operands:\n");
-
+    
     scanf("%f %f", &first, &second);
 
 ........
@@ -85,9 +85,9 @@ int power(int base, int a) {
    if (a != 0)
 
         return (base * power(base, a - 1));
-
+    
     else
-
+    
         return 1;
 
 }
