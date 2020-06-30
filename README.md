@@ -16,3 +16,9 @@ This is a repository for all my projects for courses in Xi'an Jiaotong Liverpool
 ### CSE313: Big Data Analytics
 
 ### CSE316: Computer Systems Security
+
+### EEE301: Analogue and Digital Communications II	
+
+### EEE310: Embedded Computer Systems
+
+### EEE339: Digital System Design with HDL	
