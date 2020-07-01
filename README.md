@@ -17,7 +17,15 @@ This is a repository for all my projects for courses in Xi'an Jiaotong Liverpool
 
 ### CSE316: Computer Systems Security
 
-### EEE301: Analogue and Digital Communications II	
+### EEE202: Analogue and Digital Communications I
+
+### EEE301: Analogue and Digital Communications II
+
+### EEE204: Continuous and Discrete Time Signals and Systems II
+
+### EEE216: Microprocessor Systems
+
+### EEE220: Instrumentation and Control System
 
 ### EEE310: Embedded Computer Systems
 
