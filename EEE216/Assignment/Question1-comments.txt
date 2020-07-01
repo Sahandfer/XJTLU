@@ -1,0 +1,16 @@
+Assignment ==> Question 1 comments
+
+Prerequisites ==> put 15 in memory 0x33 and 1 in memory 0x32 
+
+
+
+0	0033	load 15 from the memory 0x33
+1	100B	store the value 15 in memory address 0x0B (This would be used as both the counter and the amount to be added)
+2	000B	load memory address 0x0B ( which is used as amount to be added)
+3	200A	add the mentioned value to the value stored inside memory 0x0A
+4	100A	store the sum inside memory 0x0A
+5	000B	load memory address 0x0B (which is used as counter)
+6	3032	subtract 1 from it (1 should be initially stored in memory 0x32)
+7	100B	store the subtraction result in memory 0x0B
+8	6001	jump to step 2 and loop until counter is 0
+9	7000	end the program 

@@ -1,0 +1,8 @@
+;Assignment ==> Question 2, Part c
+start	mov		r0, #0x06  ;The first number stored in r0
+		mov		r1, #0x06  ;The second number stored in r1
+		subs		r2,r0,r1 ;subtracting two numbers together and storing the result in r2
+		beq		moveNum ;jump to moving the number to memory
+		end
+moveNum	mov		r3, #0x10c ; move value of the required memory address to r3
+		str		r0, [r3] ; store the number (from r0) into the required memory address (0x10c)

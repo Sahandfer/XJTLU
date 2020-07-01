@@ -1,0 +1,5 @@
+;Assignment ==> Question 2, Part a
+start	mov		r0, #0xA6 ;The first number stored in r0
+		mov		r1, #0xB6 ;The second number (the addend) stored in r1
+		adds		r2,r0,r1 ;adding two numbers together and storing the result in r2
+		end

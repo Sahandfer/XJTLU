@@ -1,0 +1,2 @@
+Dependencies for Project 'EEE216_lab', Target 'Target 1': (DO NOT MODIFY !)
+F (.\task4.s)(0x5CB8506E)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Program Files\Keil\ARM\CMSIS\Include" -I "C:\Program Files\Keil\ARM\INC\ARM" --list "task4.lst" --xref -o "task4.o" --depend "task4.d")

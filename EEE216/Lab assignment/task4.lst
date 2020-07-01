@@ -1,0 +1,34 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             ArmExample, Code ; code area de
+                                                            claration and name
+    2 00000000                 ENTRY                        ; program entry poi
+                                                            nt
+    3 00000000         Main
+    4 00000000 E3A01000        MOV              R1, #Value1 ;load the first val
+                                                            ue into R1
+    5 00000004 E3A02000        MOV              R2, #Value2 ;load the second va
+                                                            lue into R2
+    6 00000008 E1510002        CMP              R1, R2      ;
+    7 0000000C 1A000000        BNE              Store
+    8 00000010 EF000000        SWI              &0
+    9 00000014         Store
+   10 00000014 E59F300A        LDR              R3, Value
+   11 00000018 E59F4008        LDR              R4, fault
+   12 0000001C E5843000        STR              R3, [R4]
+   13 00000020 34 12   Value1  DCW              &1234       ;the first value
+   14 00000022 00 00           align
+   15 00000024 34 12   Value2  DCW              &1234       ;the second value
+   16 00000026 FF 00   Value   DCW              0xFF
+   17 00000028 FFFFFFF0 
+                       fault   DCD              &FFFFFFF0
+   18 0000002C         
+   19 0000002C                 END                          ;end of the program
+                                                            
+Command Line: --debug --xref --apcs=interwork --depend=task4.d -otask4.o -I"C:\
+Program Files\Keil\ARM\CMSIS\Include" -I"C:\Program Files\Keil\ARM\INC\ARM" --p
+redefine="__EVAL SETA 1" --list=task4.lst task4.s

@@ -1,0 +1,478 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\sahand.sabour16\Desktop\EEE216_lab.uvproj
+Project File Date:  04/18/2019
+
+<h2>Output:</h2>
+Build target 'Target 1'
+Target has no object modules
+Target not created
+Build target 'Target 1'
+assembling task1.s...
+linking...
+Program Size: Code=12 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task1.s...
+linking...
+Program Size: Code=8 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task1.s...
+linking...
+Program Size: Code=12 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling task1.s...
+assembling task2-i.s...
+task2-i.s(1): error: A1163E: Unknown opcode Area , expecting opcode or Macro
+task2-i.s(2): error: A1163E: Unknown opcode Entry , expecting opcode or Macro
+task2-i.s(3): error: A1105E: Area directive missing
+task2-i.s(3): warning: A1088W: Faking declaration of area AREA |$$$$$$$|
+task2-i.s(9): error: A1163E: Unknown opcode End , expecting opcode or Macro
+task2-i.s(10): warning: A1313W: Missing END directive at end of file
+Target not created
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task1.s...
+assembling task2-i.s...
+task2-i.s(8): warning: A1581W: Added 2 bytes of padding at address 0x12
+linking...
+Program Size: Code=36 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 1 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task2-i.s...
+task2-i.s(8): warning: A1581W: Added 2 bytes of padding at address 0x12
+linking...
+Program Size: Code=24 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 1 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task2-i.s...
+linking...
+Program Size: Code=24 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task2-i.s...
+task2-i.s(3): error: A1516E: Bad symbol 'Value', not defined or external
+task2-i.s(4): error: A1516E: Bad symbol 'Res', not defined or external
+Target not created
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task2-i.s...
+linking...
+Program Size: Code=24 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task2-i.s...
+linking...
+Program Size: Code=24 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task2-i.s...
+task2-i.s(8): warning: A1581W: Added 2 bytes of padding at address 0x12
+linking...
+Program Size: Code=24 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 1 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task1.s...
+linking...
+Program Size: Code=12 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task1.s...
+linking...
+Program Size: Code=12 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=12 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task1.s...
+assembling task2-i.s...
+linking...
+Program Size: Code=36 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling task1.s...
+assembling task2-i.s...
+linking...
+Program Size: Code=36 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task2-i.s...
+linking...
+Program Size: Code=24 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+task3.s(3): error: A1152E: Unexpected operator
+Target not created
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+task3.s(3): error: A1152E: Unexpected operator
+Target not created
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+task3.s(3): error: A1152E: Unexpected operator
+Target not created
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+linking...
+Program Size: Code=12 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+linking...
+Program Size: Code=12 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+linking...
+Program Size: Code=12 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+linking...
+Program Size: Code=12 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+linking...
+Program Size: Code=12 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+linking...
+Program Size: Code=12 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling task2-i.s...
+linking...
+Program Size: Code=24 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task2-i.s...
+linking...
+Program Size: Code=24 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+linking...
+Program Size: Code=12 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+linking...
+Program Size: Code=12 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+linking...
+Program Size: Code=24 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+linking...
+Program Size: Code=24 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+linking...
+Program Size: Code=16 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+linking...
+Program Size: Code=20 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+linking...
+Program Size: Code=16 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+linking...
+Program Size: Code=16 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+task3.s(8): error: A1108E: Multiply defined symbol 'Value'
+Target not created
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+task3.s(8): error: A1108E: Multiply defined symbol 'Value1'
+Target not created
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+linking...
+Program Size: Code=24 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+linking...
+Program Size: Code=24 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task3.s...
+linking...
+Program Size: Code=24 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task4.s...
+task4.s(1): error: A1163E: Unknown opcode ArmExample, , expecting opcode or Macro
+task4.s(2): error: A1105E: Area directive missing
+task4.s(2): warning: A1088W: Faking declaration of area AREA |$$$$$$$|
+Target not created
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task4.s...
+task4.s(6): error: A1516E: Bad symbol 'Store', not defined or external
+Target not created
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task4.s...
+linking...
+Program Size: Code=32 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task4.s...
+linking...
+Program Size: Code=32 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task4.s...
+linking...
+Program Size: Code=32 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task4.s...
+linking...
+Program Size: Code=32 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task4.s...
+task4.s(8): error: A1647E: Bad register name symbol, expected Integer register
+Target not created
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task4.s...
+task4.s(8): error: A1647E: Bad register name symbol, expected Integer register
+Target not created
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task4.s...
+task4.s(8): warning: A1865W: '#' not seen before constant expression
+task4.s(9): error: A1647E: Bad register name symbol, expected Integer register
+Target not created
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task4.s...
+task4.s(8): warning: A1865W: '#' not seen before constant expression
+task4.s(9): error: A1647E: Bad register name symbol, expected Integer register
+Target not created
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task4.s...
+task4.s(9): error: A1647E: Bad register name symbol, expected Integer register
+Target not created
+Build target 'Target 1'
+assembling task4.s...
+task4.s(8): error: A1150E: Bad symbol, not defined or external
+task4.s(9): error: A1647E: Bad register name symbol, expected Integer register
+Target not created
+Build target 'Target 1'
+assembling task4.s...
+task4.s(9): error: A1647E: Bad register name symbol, expected Integer register
+task4.s(13): error: A1137E: Unexpected characters at end of line
+Target not created
+Build target 'Target 1'
+assembling task4.s...
+task4.s(9): error: A1647E: Bad register name symbol, expected Integer register
+Target not created
+Build target 'Target 1'
+assembling task4.s...
+task4.s(9): error: A1647E: Bad register name symbol, expected Integer register
+Target not created
+Build target 'Target 1'
+assembling task4.s...
+task4.s(3): error: A1110E: Expected constant expression
+task4.s(4): error: A1110E: Expected constant expression
+Target not created
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task4.s...
+task4.s(3): error: A1110E: Expected constant expression
+task4.s(4): error: A1110E: Expected constant expression
+Target not created
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task4.s...
+task4.s(3): error: A1110E: Expected constant expression
+task4.s(4): error: A1110E: Expected constant expression
+task4.s(14): warning: A1581W: Added 2 bytes of padding at address 0x26
+Target not created
+Build target 'Target 1'
+assembling task4.s...
+task4.s(3): error: A1110E: Expected constant expression
+task4.s(4): error: A1110E: Expected constant expression
+Target not created
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task4.s...
+task4.s(3): warning: A1865W: '#' not seen before constant expression
+task4.s(3): error: A1110E: Expected constant expression
+task4.s(4): error: A1110E: Expected constant expression
+Target not created
+Build target 'Target 1'
+assembling task4.s...
+task4.s(3): error: A1110E: Expected constant expression
+task4.s(4): error: A1110E: Expected constant expression
+task4.s(12): warning: A1581W: Added 2 bytes of padding at address 0x22
+Target not created
+Build target 'Target 1'
+assembling task4.s...
+task4.s(3): error: A1110E: Expected constant expression
+task4.s(4): error: A1110E: Expected constant expression
+Target not created
+Build target 'Target 1'
+assembling task4.s...
+linking...
+Program Size: Code=44 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'EEE216_lab'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling task4.s...
+task4.s(3): error: A1110E: Expected constant expression
+task4.s(4): error: A1110E: Expected constant expression
+Target not created
+Build target 'Target 1'
+assembling task4.s...
+task4.s(3): error: A1110E: Expected constant expression
+task4.s(4): error: A1110E: Expected constant expression
+Target not created
+Build target 'Target 1'
+assembling task4.s...
+linking...
+Program Size: Code=44 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling task4.s...
+task4.s(3): error: A1647E: Bad register name symbol, expected Integer register
+Target not created
+Build target 'Target 1'
+assembling task4.s...
+task4.s(3): error: A1110E: Expected constant expression
+task4.s(4): error: A1110E: Expected constant expression
+Target not created
+Build target 'Target 1'
+assembling task4.s...
+linking...
+Program Size: Code=44 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling task4.s...
+linking...
+Program Size: Code=44 RO-data=0 RW-data=0 ZI-data=0  
+"EEE216_lab.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling task4.s...
+task4.s(4): error: A1110E: Expected constant expression
+task4.s(5): error: A1110E: Expected constant expression
+Target not created
