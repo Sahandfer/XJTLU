@@ -1,0 +1,181 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% a0poster Portrait Poster
+% LaTeX Template
+% Version 1.0 (22/06/13)
+%
+% The a0poster class was created by:
+% Gerlinde Kettl and Matthias Weiser (tex@kettl.de)
+% 
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a0,portrait]{a0poster}
+
+\usepackage{multicol} % This is so we can have multiple columns of text side-by-side
+\columnsep=100pt % This is the amount of white space between the columns in the poster
+\columnseprule=3pt % This is the thickness of the black line between the columns in the poster
+
+\usepackage[svgnames]{xcolor} % Specify colors by their 'svgnames', for a full list of all colors available see here: http://www.latextemplates.com/svgnames-colors
+
+%\usepackage{times} % Use the times font
+\usepackage{palatino} % Uncomment to use the Palatino font
+
+\usepackage{graphicx} % Required for including images
+\usepackage{booktabs} % Top and bottom rules for table
+\usepackage[font=Large,labelfont=bf]{caption} % Required for specifying captions to tables and figures
+\usepackage{amsfonts, amsmath, amsthm, amssymb} % For math fonts, symbols and environments
+\usepackage{wrapfig} % Allows wrapping text around tables and figures
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	POSTER HEADER 
+%----------------------------------------------------------------------------------------
+
+% The header is divided into two boxes:
+% The first is 75% wide and houses the title, subtitle, names, university/organization and contact information
+% The second is 25% wide and houses a logo for your university/organization or a photo of you
+% The widths of these boxes can be easily edited to accommodate your content as you see fit
+
+\begin{minipage}[b]{0.75\linewidth}
+\veryHuge \color{NavyBlue} \textbf{Smart House (Remote light control)} \color{Black}\\ % Title
+
+\huge \textbf{Sahand Sabour}\\[0.5cm] % Author(s)
+\huge Department of Electrical and Electronic Engineering\\[0.4cm] % University/organization
+\huge Supervisor: Dr. T.O. Ting\\
+\end{minipage}
+%
+\begin{minipage}[b]{0.25\linewidth}
+\includegraphics[scale=2.8]{fig/logo}\\
+\end{minipage}
+
+\vspace{0.5cm} % A bit of extra whitespace between the header and poster content
+
+%----------------------------------------------------------------------------------------
+
+\begin{multicols}{2} % This is how many columns your poster will be broken into, a portrait poster is generally split into 2 columns
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+\color{Navy} % Navy color for the abstract
+
+\section*{Abstract}
+\Large
+Internet of Things (IoT) is shaping the future of many industries and its many applications have changed the way people interact with their electronic devices. The main purpose of this project is to develop a platform that allows house owners to remotely monitor and control the status of the lights in their house (turn on/off). An Arduino board, a ESP8266 chip, and an Aliyun server are used to produce the necessary connections for employing the IoT. According to the final deployment results, the lights corresponding to each room of the house model can be monitored and controlled via a smartphone. It is believed that deployment of this model in larger scales, where more devices are added to the network, could improve the house owners' living experience and have great impact in the way individuals live their daily lives.
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\color{SaddleBrown} % SaddleBrown color for the introduction
+
+\section*{Introduction}
+\Large
+Since the early 2000, the internet has become an essential means of making transactions, sharing resources, and communication. With the development of the internet, the concept formally known as the Internet of Things (IoT) was introduced. IoT can be defined as a network of devices and sensors that communicate with each other via this network. Many outstanding devices such as smart phones, smart TVs, and even smart cars were created using IoT. In recent years, demand for enhancement in this field has transferred from mobile devices to home appliances, which led to the concept of Smart House \cite{lol}. Smart House refers to a house that consists of devices and sensors which are connected via a network and can be remotely monitored and controlled \cite{hehe}. 
+
+\begin{center}\vspace{1cm}
+	\includegraphics[height= 12cm, width=24cm]{smart.png}
+	\captionof{figure}{\color{Navy} Smart House design model 	\cite{hehe}}
+
+	\label{fig_rcmodel}
+\end{center}\vspace{1cm}
+
+\noindent Although Smart House is an interesting concept and many could benefit from it, the overall security threats must be examined likewise \cite{rusel}. However, since this project merely demonstrates a small model of the Smart House, security measurements were not taken into account.
+
+
+\color{DarkSlateGray} % Set the color back to DarkSlateGray for the rest of the content
+
+%----------------------------------------------------------------------------------------
+%	MATERIALS AND METHODS
+%----------------------------------------------------------------------------------------
+
+\section*{Methodology}
+\Large
+
+The ESP8266 chip, which is a WiFi module, is programmed using the Arduino software to send requests to and receive data from the Aliyun server. In addition, this chip is also connected to the main board, which consists of the LED lights for each room. The following figure (Figure 2) demonstrates this establishment.
+
+\begin{center}\vspace{1cm}
+	\includegraphics[height= 12cm, width=24cm]{block}
+	\captionof{figure}{\color{Navy} Include a short caption for your figure.}
+	\label{fig_rcmodel}
+\end{center}\vspace{1cm}
+
+The following equation was added for the assignment \cite{toting}
+
+\begin{equation}
+	\begin{bmatrix}
+	\frac{B(1+\lambda_{m^*})}{Ln(2)}(\frac{H_{m^*}^{n}}{1+p_{m^*}^{n}H_{m^*}^{n}})-q\varepsilon_{0}-\mu\\
+	
+	B.\log_{2}(1+p_{m^*}^{n}H_{m^*}^{n})- \overline{c}_{m^*}\\
+	
+	-p_{m}^{n}*+p_{T}
+	\end{bmatrix}
+\end{equation}
+
+%----------------------------------------------------------------------------------------
+%	RESULTS 
+%----------------------------------------------------------------------------------------
+\color{Navy} 
+\section*{Results}
+As this project is currently not fully developed, there are no results to be displayed at the moment. However, the following table (Table 1) was added to illustrate how the results sections would appear when the project is finalized.
+
+\color{Black}
+\begin{center}
+\captionof{table}{\color{Navy} Random table} \label{table_results}
+\begin{tabular}{c | c | c }
+\hline 
+Treatments & Response 1 & Response 2 \\
+\hline
+1 & 0.0003262 & 0.562 \\
+2 & 0.0015681 & 0.910 \\
+3 & 0.0009271 & 0.296 \\
+\hline
+\end{tabular}
+\end{center}
+
+
+%----------------------------------------------------------------------------------------
+%	CONCLUSIONS
+%----------------------------------------------------------------------------------------
+
+\color{SaddleBrown} % SaddleBrown color for the conclusions to make them stand out
+
+\section*{Conclusions}
+\Large
+
+In conclusion, the IoT was used to develop a functioning model of a Smart House. Consequently, an app could be used to remotely monitor and control the lights in different rooms of the constructed house model.
+
+\color{DarkSlateGray} % Set the color back to DarkSlateGray for the rest of the content
+
+
+ %----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+\nocite{*} % Print all references regardless of whether they were cited in the poster or not
+\bibliographystyle{IEEEtran} % Plain referencing style
+\bibliography{ref} % Use the example bibliography file sample.bib
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\section*{Acknowledgement}
+\large
+
+Special thanks to my teammates and Dr. T.O. Ting as our supervisor for his supervision and critical criticism that made this project significantly more functional and meaningful.
+
+%----------------------------------------------------------------------------------------
+
+\end{multicols}
+\end{document}

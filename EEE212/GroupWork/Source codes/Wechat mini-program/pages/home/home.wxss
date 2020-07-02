@@ -1,0 +1,115 @@
+@import "../../CSS_files/ripples.wxss";
+
+#pageTitle{
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 4px;
+}
+
+#pageSubtitle{
+  text-align: center;
+  font-size: 14px;
+}
+
+#content{
+  margin-top: 20px;
+  transition: 0.6s;
+  background: -webkit-linear-gradient(top, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
+  background-blend-mode: multiply;
+  padding: 10px 0;
+  height: 200px;
+}
+
+.iconLabel{
+  width: 80%;
+  margin: 12px auto;
+  padding: 7px;
+  display: flex;
+  flex-direction: row;
+  background: white;
+  border-radius: 5px;
+}
+
+.iconImage{
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: relative;
+  margin-right: 10px;
+}
+
+.iconName{
+  margin-top: 3px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.iconStatus{
+  color: grey;
+  margin-top: 3px;
+  position: fixed;
+  font-size: 14px;
+  line-height: 14px;
+  right: 40px;
+}
+
+.lightContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 36px 0;
+}
+
+.lightBox{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  margin-left: 32px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.lightBox-text{
+  margin: auto;
+  width: 80px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+  font-size: 16px;
+  margin-top: 32px;
+}
+
+.button_container{
+  transition: 0.3s;
+  margin-top: 30px;
+}
+
+.button{
+  width: 100px;
+  font-size: 14px;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.imageMessage{
+  display: flex;
+  flex-direction: row;
+  margin:10px auto;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.lightPic{
+  height: 36px;
+  width: 36px;
+  margin-left: 50px;
+  margin-right: 10px;
+}
+
+.lightMessage{
+  margin-top: 11px;
+  font-size: 14px;
+  line-height: 14px;
+}

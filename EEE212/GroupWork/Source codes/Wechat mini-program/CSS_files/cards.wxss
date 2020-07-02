@@ -1,0 +1,93 @@
+.outer_card{
+  background: linear-gradient(to bottom, #9900cc 0%, #3366ff 115%);
+  width: 80%;
+  height: 120rpx;
+  margin: 30rpx auto;
+  margin-bottom: 10rpx;
+  color: black;
+  font-family: 'Avenir Next';
+  border-radius: 20rpx; 
+}
+
+.inner_card{
+  width: 99.4%;
+  height: 98%;
+  left: 0.3%;
+  top:1%;
+  position: relative;
+  font-size: 16px;
+  border-radius: 18rpx;
+}
+
+.details_card{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 6rpx;
+}
+
+.titleAndNote{
+  width: 70%;
+}
+
+.card_title{
+  margin-top:20rpx;
+  margin-left:16rpx;  
+}
+
+.card_note{
+  font-size: 12px;
+  margin-left:16rpx;
+  margin-bottom:20rpx;
+  overflow: hidden;
+}
+
+
+.card_misc{
+  width: 40%;
+}
+
+.cardDate{
+  margin-top:20rpx;
+  margin-right:16rpx;
+  font-family: 'Avenir Next';
+  width: 80%;
+  text-align: right;
+}
+
+.cardTime{
+  margin-right:16rpx;
+  font-family: 'Avenir Next';
+  width: 80%;
+  font-size: 12px;
+  text-align: right;
+}
+
+.buttons_card{
+  width: 100%;
+}
+
+.cardButtons{
+  display: flex;
+  flex-direction: row;
+  margin-top: 6rpx;
+}
+
+.cardButton{
+  width: 12.5%;
+  margin-left: 10%;
+}
+
+.cardButtonPic{
+  width: 45rpx;
+  height: 45rpx;
+  border-radius: 50%;
+  margin:  20rpx auto 0 auto;
+  display: block;
+}
+
+.cardButtonText{
+  font-size: 11px;
+  text-align: center;
+  margin-top: 4rpx;
+}

@@ -1,0 +1,33 @@
+\begin{thebibliography}{1}
+
+\bibitem{IOT}
+X.~Shang, R.~Zhang, and Y.~Chen, ``Internet of things (iot) service
+  architecture and its application in e-commerce,'' {\em Journal of Electronic
+  Commerce in Organizations (JECO)}, pp.~1--12, 2012.
+
+\bibitem{SmartHouse}
+H.~Yang, W.~Lee, and H.~Lee, ``Iot smart home adoption: The importance of
+  proper level automation,'' {\em Journal of Sensors}, pp.~2--11, 2018.
+
+\bibitem{lolz}
+D.~Bregman, ``Smart home intelligence - the ehome that learns,'' {\em
+  International Journal of Smart Home}, pp.~35--44, 2010.
+
+\bibitem{haha}
+A.~Georgiev and S.~Schlögl, ``Smart home technology: An exploration of end
+  user perceptions,'' pp.~64--75, 2018.
+
+\bibitem{yaya}
+S.~J. Darby, ``Smart technology in the home: time for more clarity,'' 2017.
+
+\bibitem{arduino}
+``{Introduction} what is arduino?,'' 2019.
+
+\bibitem{arduino2}
+A.~D. Ausilio, ``Arduino: A low-cost multipurpose lab equipment,'' {\em
+  Behavior Research Methods}, vol.~44, no.~2, pp.~305--313, 2012.
+
+\bibitem{nodemcu}
+A.~Zait, ``{NodeMCU} a perfect board for iot,'' 2018.
+
+\end{thebibliography}

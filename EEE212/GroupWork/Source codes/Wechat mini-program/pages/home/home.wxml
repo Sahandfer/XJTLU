@@ -1,0 +1,47 @@
+<view id="pageTitle" class="ripple fadeInDown">Welcome</view>
+<view id="pageSubtitle" class="ripple fadeInDown">Experience a new way of living</view>
+
+<view id="content" style="opacity:{{showContent?'1':'0'}}">
+  <view class="iconLabel" bindtouchstart='changeLight' data-lightNum='1'  style="background:{{selectedLight=='1'?'#B4B7BA':''}};">
+    <image class="iconImage" src="../../Images/bed.png"></image>
+    <view class="iconName">Bedroom lights</view>
+    <view class="iconStatus">{{lightStatus[0]}}</view>
+  </view>
+  <view class="iconLabel" bindtouchstart='changeLight' data-lightNum='2' style="background:{{selectedLight=='2'?'silver':''}};">
+    <image class="iconImage" src="../../Images/dinner.png"></image>
+    <view class="iconName">Dining room lights</view>
+    <view class="iconStatus">{{lightStatus[1]}}</view>
+  </view>
+  <view class="iconLabel" bindtouchstart='changeLight' data-lightNum='3' style="background:{{selectedLight=='3'?'silver':''}};">
+    <image class="iconImage" src="../../Images/room.png"></image>
+    <view class="iconName">Living room lights</view>
+    <view class="iconStatus">{{lightStatus[2]}}</view>
+  </view>
+  <view class="iconLabel" bindtouchstart='changeLight' data-lightNum='4' style="background:{{selectedLight=='4'?'silver':''}};">
+    <image class="iconImage" src="../../Images/key.png"></image>
+    <view class="iconName">Front door</view>
+    <view class="iconStatus">{{lightStatus[3]}}</view>
+  </view>
+</view>
+
+<view class="button_container" style="opacity: {{selectedLight!=null?'1':'0'}}">
+    
+    <block wx-if="{{selectedLight!=null}}">
+    <view class="imageMessage">
+      <block wx-if="{{selectedLight!=4 &&selectedLight!=null}}">
+        <image class="lightPic" 
+        src="{{lightStatus[selectedLight-1]=='on'?'../../Images/lightOn.png':'../../Images/lightOff.png'}}">
+        </image>
+        <view class="lightMessage">The lights in this room are {{lightStatus[selectedLight-1]}}</view>
+      </block>
+      <block wx-if="{{selectedLight==4}}">
+        <image class="lightPic" 
+        src="{{lightStatus[selectedLight-1]=='closed'?'../../Images/lock.png':'../../Images/unlock.png'}}">
+        </image>
+        <view class="lightMessage">The front door is {{lightStatus[selectedLight-1]}}</view>
+      </block>
+    </view>
+      <button class="button" bindtap="changeStatus" type="{{lightStatus[selectedLight-1]=='on'?'warn':'primary'}}" disabled="{{disabled}}" style="display:{{selectedLight==4?'none':''}}">{{lightStatus[selectedLight-1]=='on'?'Turn off':'Turn on'}}</button>
+    </block>
+    
+</view>
