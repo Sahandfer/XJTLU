@@ -1,2 +1,2 @@
 # Assignment
-Project regarding Integrated Electronics and Design nMOS IC Design.
+This project includes Integrated Electronics and Design nMOS IC Design.
