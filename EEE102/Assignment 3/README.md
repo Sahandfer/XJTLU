@@ -1,0 +1,42 @@
+# Assignment 3
+## Problem statement
+In this exercise, we are asked to program a game called monopoly using C++. As mentioned in the task sheet, there are two players who play this game. One is the user and the other is the computer. Each player starts off the game by 10000 points in their balance.
+The game board for this game should consist of 80 different squares. Each of the squares, except the starting point (the first one) should have a random price from 10 to 500 points. Players take turns to roll a dice, that generates a random number from 1 to 6. Then, each player is moved on the game board according to the number on the dice they rolled.
+Throughout the game there are certain rules that either decrease or increase the players’ balance. The rules are as follows:
+1) If a square of the board game is not owned by any of the players, the player on that square can choose to pay the price for that square and purchase it.
+2) If a square of the board game has already been purchased by the player on the square, the player can choose to pay half of the price of the square and invest in it.
+3) If a player moves to a square that has already been purchased by the other player, the player would be fined. If none of the adjacent squares are purchased by the other play, the fine is 10% of the price of that square. This fine increases to 15% if one of the adjacent squares is owned by the other player and further increases to 20% if both of the adjacent squares are also purchased by the other player. The fine for this section won’t be more than 20%.
+4) If a player moves to a square that has already been invested in by the other player, the fine for the player would be same as mentioned before with a 5% increase. The fine for this section won’t be more than 25%.
+The player whose balance reaches zero first is announced the loser and the other player is granted the victory. Moreover, as mentioned in the task sheet, we are required to record the players’ progress in a file and provide the user with the chance of resuming an unfinished session the next time the game is started. Furthermore, we are asked to use at least three classes (objects) for this program.
+
+## Analysis
+The inputs required for this program are as follows:
+1) User’s information ==> name and gender, that are used to create a character for the user to play as.
+2) User’s choice ==> Throughout this program, the user is often asked to choose between a number of provided choices. These choices allow the user to roll the dice, purchase a location, invest in a location and resume the game based on previous progress and also quit the game if necessary.
+3) A file containing the user’s progress in the game. This file contains the user’s name and gender as well as both of the players’ available balance, purchased locations, and invested locations. This file is used as input to restore previous progress made in the game.
+There are a number of outputs for this program:
+1) The board game is displayed in the console and the location of each of player on the board game is marked with “XX” after the player’s turn is over.
+2) Occasional messages that are displayed to ask the user to make a choice (roll the dice, quit the game, buy a location, invest in a location and/or skip their turn).
+3) Occasional messages that are displayed to inform the user about information regarding the gameplay (the number on the dice, their location and the price of it, the amount of the fine decreased from their balance, whose turn it is and/or their name, gender and balance).
+4) Occasional messages that are displayed to inform the user about the errors they made. These messages are displayed when the user enters an invalid input when input is required.
+5) A file containing the user’s progress in the game. This file contains the user’s name and gender as well as both of the players’ available balance, purchased locations, and invested locations. This file is used to save the user’s current progress in the game and can be used as input in the next time that the user runs the program.
+Design
+The algorithm used for this program is as follows:
+1) As the first step of the program all the variables need to either be defined or initiated. Consequently, two player objects should be created to represent the user and the computer. Moreover, a random price is given to each place object and they are stored in an array.
+2) The program searches for save files. If the program finds the required save files, a message would prompt, which asks the user whether they want to continue their previous or start a new game. If the program doesn’t find the save files, this step is skipped.
+3) The user is first asked to enter a name for their character. Then the user should choose either 1 or 2 (where 1 corresponds to male and 2 corresponds to female) to choose the gender for their character. These set of information is used to set up a character for the user. Consequently, both of the player’s information (name, gender, location and balance) is displayed.
+4) Now, the user is given a choice to either roll the dice or quit the game. If the user chooses to roll the dice, the program progresses to the next step.
+If the user chooses to end the game, and if the decision is not made in the first round of the game, the progress of the user and computer are respectively saved to text files. Consequently, the program shuts down.
+5) A random number from 1-6 is generated. Then, the user’s location will be increased with the same amount. Now the price of that location would be received and reported to the user. There are different possibilities for this stage:
+5.1) If the place doesn’t have an owner, the user can choose to purchase this location or skip their turn. If the user chooses to purchase this location, the corresponding amount would be decreased from their balance and they would be
+provided with ownership of that square in the map. If the user chooses to skip their turn, we would directly move to step 6.
+5.2) If the place’s owner is the user, the user can choose to invest in this location or skip their turn. If the user chooses to invest in this location, the corresponding amount would be decreased from their balance and they would be provided the investment attribute of this location. If the user chooses to skip their turn, we would directly move to step 6.
+5.3) If the place is owned by the computer, the user does not have an option to choose and is fined instead. The amount of find depends on the rules that were previously mentioned. Each of these rules is implemented with a number if statements, in which a certain amount of money is decreased from the user’s balance.
+6) A message would be displayed to inform the user of the results. The map of the game is displayed on the screen and the user’s location is indicated by “XX” on the map.
+7) The user’s balance is checked. If the balance is not higher than 0, a message declaring the user has lost would be displayed as the result. Consequently, the game would shut down. If the user’s balance is higher than 0, the program moves onto step 8.
+8) A random number from 1-6 is generated. Then, the computer’s location will be increased with the same amount. Now the price of that location would be received and reported to the user. There are different possibilities for this stage:
+8.1) If the place doesn’t have an owner, the computer would choose to purchase this location and the corresponding amount would be decreased from its balance. As a result, the computer would be provided with ownership of that square in the map.
+8.2) If the place’s owner is the computer, the computer would choose to invest in this location, the corresponding amount would be decreased from its balance and it would be provided the investment attribute of this location.
+8.3) If the place is owned by the computer, the computer would be fined according to the previously mentioned rules. Each of these rules is implemented with a number if statements, in which a certain amount of money is decreased from the computer’s balance.
+9) A message would be displayed to inform the user of the results. The map of the game is displayed on the screen and the computer’s location is indicated by “XX” on the map.
+10) The computer’s balance is checked. If the balance is not higher than 0, a message declaring the user has won would be displayed as the result. Consequently, the game would shut down. If the computer’s balance is higher than 0, the program moves onto step 4.
