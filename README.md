@@ -3,11 +3,11 @@ This is a repository for all my projects for courses in Xi'an Jiaotong Liverpool
 
 ## Courses
 
-### CSE105: Introduction to Java
-
 ### CSE205: Introduction to Networking
 
-### CSE210: Object Oriented Programming
+### CSE207: Software Engineering I
+
+### CSE210: Object Oriented Programming using Java
 
 ### CSE301: Bio Computation
 
@@ -15,15 +15,19 @@ This is a repository for all my projects for courses in Xi'an Jiaotong Liverpool
 
 ### CSE313: Big Data Analytics
 
-### CSE316: Computer Systems Security
-
 ### EEE102: C++ Programming and Software Eng. II
+
+### EEE104: Digital Electronics
+
+### EEE112: Integrated Electronics and Design
 
 ### EEE202: Analogue and Digital Communications I
 
 ### EEE204: Continuous and Discrete Time Signals and Systems II
 
-### EEE212:
+### EEE211: Electronic Circuits and Systems
+
+### EEE212: Industrial Awareness and Group Project
 
 ### EEE216: Microprocessor Systems
 
