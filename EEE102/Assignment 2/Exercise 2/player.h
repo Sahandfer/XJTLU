@@ -37,8 +37,9 @@ public:
 	virtual bool attack(player &p)=0;	// normal attack
 	virtual bool specialatt(player &p)=0;	//special attack
 	virtual void isLevelUp()=0;			// level up judgement
+	virtual void AI(player &p)=0;
 	/* Attention!
-	These three methods are called "Pure virtual functions".
+	These four methods are called "Pure virtual functions".
 	They have only declaration, but no definition.
 	The class with pure virtual functions are called "Abstract class", which can only be used to inherited, but not to constructor objects. 
 	The detailed definition of these pure virtual functions will be given in subclasses. */

@@ -56,19 +56,19 @@ int main()
 		nOpp++;
 		system("cls");
 		cout<<"STAGE " <<nOpp<<endl;
-		swordsman enemy(i, "Warrior");	// Initialise an opponent, level i, name "Warrior"
+		enemy = new swordsman(i, "Warrior");	// Initialise an opponent, level i, name "Warrior"
 		int random = 1 + rand() % 3; //Here we declare a random variable that chooses our opponent's type
 
 		if (random == 1) {
-			swordsman enemy(i, "Swords warrior");
+			enemy = new swordsman(i, "Sword Warrior");
 			cout << "Your opponent, a Level " << i << " Swordsman." << endl; //Initialise a swordsman as the opponent
 		}
 		else if (random == 2) {
-			archer enemy(i, "Archer warrior"); //Initialise an archer as the opponent
+			enemy = new archer(i, "Archer Warrior"); //Initialise an archer as the opponent
 			cout << "Your opponent, a Level " << i << " Archer." << endl;
 		}
 		else if (random == 3) {
-			mage enemy(i, "Mage warrior"); //Initialise a mage as the opponent
+			enemy = new mage(i, "Mage Warrior"); //Initialise a mage as the opponent
 			cout << "Your opponent, a Level " << i << " Mage." << endl;
 		}
 		
@@ -79,12 +79,12 @@ int main()
 
 		human->reFill();				// get HP/MP refill before start fight
 		
-		while(!human->death() && !enemy.death())	// no died
+		while(!human->death() && !enemy->death())	// no died
 		{
 			success=0;
 			while (success!=1)
 			{
-				showinfo(*human,enemy);				// show fighter's information
+				showinfo(*human,*enemy);				// show fighter's information
 				cout<<"Please give command: "<<endl;
 				cout<<"1 Attack; 2 Special Attack; 3 Use Heal; 4 Use Magic Water; 0 Exit Game"<<endl;
 				cin>>tempCom;
@@ -99,14 +99,14 @@ int main()
 					else
 						break;
 				case 1:
-					success=human->attack(enemy);
+					success=human->attack(*enemy);
 					human->isLevelUp();
-					enemy.isDead();
+					enemy->isDead();
 					break;
 				case 2:
-					success=human->specialatt(enemy);
+					success=human->specialatt(*enemy);
 					human->isLevelUp();
-					enemy.isDead();
+					enemy->isDead();
 					break;
 				case 3:
 					success=human->useHeal();
@@ -118,24 +118,25 @@ int main()
 					break;
 				}
 			}
-			if(!enemy.death())		// If AI still alive
-				enemy.AI(*human);
+			if (!enemy->death())		// If AI still alive
+				
+				enemy->AI(*human);
 			else							// AI died
 			{
 				cout<<"YOU WIN"<<endl;
-				human->transfer(enemy);		// player got all AI's items
+				human->transfer(*enemy);		// player got all AI's items
 			}
 			if (human->death())
 			{
 				system("cls");
 				cout<<endl<<setw(50)<<"GAME OVER"<<endl;
-				human->isDead();		// player is dead, program is getting to its end, what should we do here?
+				human->isDead();		// player is dead
 				system("pause");
 				return 0;
 			}
 		}
 	}
-	showinfo(*human, *enemy);			// You win, program is getting to its end, what should we do here?
+	showinfo(*human, *enemy);			// You win
 	system("cls");
 	cout<<"Congratulations! You defeated all opponents!!"<<endl;
 	system("pause");
