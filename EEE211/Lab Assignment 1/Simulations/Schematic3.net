@@ -1,0 +1,11 @@
+* Schematics Netlist *
+
+
+
+C_C1         $N_0001 Vin  0.1uF  
+Q_Q3         Vout Vin $N_0002 Q2N2222
+V_VCC         $N_0003 0 9V
+V_-VCC         0 $N_0002 9V
+R_R1         Vout $N_0003  3k  
+I_IBQ         0 Vin DC 16.753uA  
+V_Vs         $N_0001 0 DC 0V AC 0.1V 

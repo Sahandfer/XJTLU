@@ -1,0 +1,180 @@
+
+**** 11/08/18 16:39:56 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\sahand.sabour16\Desktop\Schematic2.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Thu Nov 08 16:33:42 2018
+
+
+
+** Analysis setup **
+.DC LIN V_V3 -9 9 1 
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic2.net"
+
+**** INCLUDING Schematic2.net ****
+* Schematics Netlist *
+
+
+
+R_R1         $N_0002 $N_0001  1k  
+Q_Q1         $N_0001 $N_0001 $N_0003 Q2N2907A
+V_V2         0 $N_0002 9V
+V_V1         $N_0003 0 9V
+V_V3         $N_0004 0 0V
+Q_Q2         $N_0004 $N_0001 $N_0003 Q2N2907A
+
+**** RESUMING Schematic2.cir ****
+.INC "Schematic2.als"
+
+
+
+**** INCLUDING Schematic2.als ****
+* Schematics Aliases *
+
+.ALIASES
+R_R1            R1(1=$N_0002 2=$N_0001 )
+Q_Q1            Q1(c=$N_0001 b=$N_0001 e=$N_0003 )
+V_V2            V2(+=0 -=$N_0002 )
+V_V1            V1(+=$N_0003 -=0 )
+V_V3            V3(+=$N_0004 -=0 )
+Q_Q2            Q2(c=$N_0004 b=$N_0001 e=$N_0003 )
+.ENDALIASES
+
+
+**** RESUMING Schematic2.cir ****
+.probe
+
+
+.END
+
+**** 11/08/18 16:39:56 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\sahand.sabour16\Desktop\Schematic2.sch
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2907A        
+               PNP             
+          IS  650.600000E-18 
+          BF  231.7          
+          NF    1            
+         VAF  115.7          
+         IKF    1.079        
+         ISE   54.810000E-15 
+          NE    1.829        
+          BR    3.563        
+          NR    1            
+          RB   10            
+          RC     .715        
+         CJE   19.820000E-12 
+         MJE     .3357       
+         CJC   14.760000E-12 
+         MJC     .5383       
+          TF  603.700000E-12 
+         XTF    1.7          
+         VTF    5            
+         ITF     .65         
+          TR  111.300000E-09 
+         XTB    1.5          
+          CN    2.2          
+           D     .52         
+
+
+**** 11/08/18 16:39:56 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\sahand.sabour16\Desktop\Schematic2.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    8.1997                   ($N_0002)   -9.0000                       
+
+($N_0003)    9.0000                   ($N_0004)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -1.720E-02
+    V_V1        -3.546E-02
+    V_V3         1.826E-02
+
+    TOTAL POWER DISSIPATION   4.74E-01  WATTS
+
+
+**** 11/08/18 16:39:56 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\sahand.sabour16\Desktop\Schematic2.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** BIPOLAR JUNCTION TRANSISTORS
+
+
+NAME         Q_Q1        Q_Q2      
+MODEL        Q2N2907A    Q2N2907A  
+IB          -7.59E-05   -7.59E-05 
+IC          -1.70E-02   -1.83E-02 
+VBE         -8.00E-01   -8.00E-01 
+VBC          0.00E+00    8.20E+00 
+VCE         -8.00E-01   -9.00E+00 
+BETADC       2.24E+02    2.40E+02 
+GM           6.49E-01    6.95E-01 
+RPI          3.43E+02    3.43E+02 
+RX           1.00E+01    1.00E+01 
+RO           6.79E+03    6.79E+03 
+CBE          4.28E-10    4.55E-10 
+CBC          1.49E-11    3.89E-12 
+CJS          0.00E+00    0.00E+00 
+BETAAC       2.23E+02    2.38E+02 
+CBX/CBX2     0.00E+00    0.00E+00 
+FT/FT2       2.33E+08    2.41E+08 
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+

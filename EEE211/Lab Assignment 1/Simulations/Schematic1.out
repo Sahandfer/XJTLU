@@ -1,0 +1,201 @@
+
+**** 11/08/18 18:41:55 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\sahand.sabour16\Desktop\Schematic1.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Thu Nov 08 18:33:35 2018
+
+
+
+** Analysis setup **
+.ac DEC 101 10 1000K
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic1.net"
+
+**** INCLUDING Schematic1.net ****
+* Schematics Netlist *
+
+
+
+C_C1         $N_0001 Vin  0.1uF  
+Q_Q1         $N_0002 $N_0002 $N_0003 Q2N2907A
+R_R3         $N_0004 $N_0002  20k  
+V_Vcc         $N_0003 0 9V
+V_-Vcc         0 $N_0004 9V
+Q_Q2         $N_0005 $N_0002 $N_0003 Q2N2907A
+Q_Q3         $N_0005 Vin $N_0004 Q2N2222
+C_C2         $N_0006 Vout  0.1uF  
+R_R         $N_0004 Vout  5k  
+Q_Q4         $N_0003 $N_0005 Vout Q2N2222
+I_IBQ         0 Vin DC 5.5579uA  
+V_Vs         $N_0001 0 DC 0V AC 0V 
+V_V1         $N_0006 0 DC 0V AC 0.01V 
+
+**** RESUMING Schematic1.cir ****
+.INC "Schematic1.als"
+
+
+
+**** INCLUDING Schematic1.als ****
+* Schematics Aliases *
+
+.ALIASES
+C_C1            C1(1=$N_0001 2=Vin )
+Q_Q1            Q1(c=$N_0002 b=$N_0002 e=$N_0003 )
+R_R3            R3(1=$N_0004 2=$N_0002 )
+V_Vcc           Vcc(+=$N_0003 -=0 )
+V_-Vcc          -Vcc(+=0 -=$N_0004 )
+Q_Q2            Q2(c=$N_0005 b=$N_0002 e=$N_0003 )
+Q_Q3            Q3(c=$N_0005 b=Vin e=$N_0004 )
+C_C2            C2(1=$N_0006 2=Vout )
+R_R             R(1=$N_0004 2=Vout )
+Q_Q4            Q4(c=$N_0003 b=$N_0005 e=Vout )
+I_IBQ           IBQ(+=0 -=Vin )
+V_Vs            Vs(+=$N_0001 -=0 )
+V_V1            V1(+=$N_0006 -=0 )
+_    _(Vin=Vin)
+_    _(Vout=Vout)
+.ENDALIASES
+
+
+**** RESUMING Schematic1.cir ****
+.probe
+
+
+.END
+
+**** 11/08/18 18:41:55 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\sahand.sabour16\Desktop\Schematic1.sch
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2907A        Q2N2222         
+               PNP             NPN             
+          IS  650.600000E-18   14.340000E-15 
+          BF  231.7           255.9          
+          NF    1               1            
+         VAF  115.7            74.03         
+         IKF    1.079            .2847       
+         ISE   54.810000E-15   14.340000E-15 
+          NE    1.829           1.307        
+          BR    3.563           6.092        
+          NR    1               1            
+          RB   10              10            
+          RC     .715           1            
+         CJE   19.820000E-12   22.010000E-12 
+         MJE     .3357           .377        
+         CJC   14.760000E-12    7.306000E-12 
+         MJC     .5383           .3416       
+          TF  603.700000E-12  411.100000E-12 
+         XTF    1.7             3            
+         VTF    5               1.7          
+         ITF     .65             .6          
+          TR  111.300000E-09   46.910000E-09 
+         XTB    1.5             1.5          
+          CN    2.2             2.42         
+           D     .52             .87         
+
+
+**** 11/08/18 18:41:55 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\sahand.sabour16\Desktop\Schematic1.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  Vin)   -8.3597  ( Vout) 371.9E-06  ($N_0001)    0.0000                       
+
+($N_0002)    8.2782                   ($N_0003)    9.0000                       
+
+($N_0004)   -9.0000                   ($N_0005)     .6587                       
+
+($N_0006)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vcc       -3.566E-03
+    V_-Vcc      -3.572E-03
+    V_Vs         0.000E+00
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   6.42E-02  WATTS
+
+
+**** 11/08/18 18:41:55 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\sahand.sabour16\Desktop\Schematic1.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** BIPOLAR JUNCTION TRANSISTORS
+
+
+NAME         Q_Q1        Q_Q2        Q_Q3        Q_Q4      
+MODEL        Q2N2907A    Q2N2907A    Q2N2222     Q2N2222   
+IB          -3.93E-06   -3.93E-06    5.56E-06    1.04E-05 
+IC          -8.56E-04   -9.12E-04    9.02E-04    1.79E-03 
+VBE         -7.22E-01   -7.22E-01    6.40E-01    6.58E-01 
+VBC          0.00E+00    7.62E+00   -9.02E+00   -8.34E+00 
+VCE         -7.22E-01   -8.34E+00    9.66E+00    9.00E+00 
+BETADC       2.18E+02    2.32E+02    1.62E+02    1.72E+02 
+GM           3.31E-02    3.52E-02    3.48E-02    6.88E-02 
+RPI          6.76E+03    6.76E+03    5.18E+03    2.73E+03 
+RX           1.00E+01    1.00E+01    1.00E+01    1.00E+01 
+RO           1.35E+05    1.35E+05    9.21E+04    4.60E+04 
+CBE          5.27E-11    5.41E-11    5.05E-11    6.50E-11 
+CBC          1.48E-11    4.03E-12    3.04E-12    3.12E-12 
+CJS          0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+BETAAC       2.24E+02    2.38E+02    1.80E+02    1.88E+02 
+CBX/CBX2     0.00E+00    0.00E+00    0.00E+00    0.00E+00 
+FT/FT2       7.80E+07    9.66E+07    1.03E+08    1.61E+08 
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

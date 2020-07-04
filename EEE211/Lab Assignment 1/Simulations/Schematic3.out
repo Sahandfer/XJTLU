@@ -1,0 +1,184 @@
+
+**** 11/10/18 12:52:22 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\sahand.sabour16\Desktop\Schematic3.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Nov 10 12:52:19 2018
+
+
+
+** Analysis setup **
+.ac DEC 101 10 1.00K
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Schematic3.net"
+
+**** INCLUDING Schematic3.net ****
+* Schematics Netlist *
+
+
+
+C_C1         $N_0001 Vin  0.1uF  
+Q_Q3         Vout Vin $N_0002 Q2N2222
+V_VCC         $N_0003 0 9V
+V_-VCC         0 $N_0002 9V
+R_R1         Vout $N_0003  3k  
+I_IBQ         0 Vin DC 16.753uA  
+V_Vs         $N_0001 0 DC 0V AC 0.1V 
+
+**** RESUMING Schematic3.cir ****
+.INC "Schematic3.als"
+
+
+
+**** INCLUDING Schematic3.als ****
+* Schematics Aliases *
+
+.ALIASES
+C_C1            C1(1=$N_0001 2=Vin )
+Q_Q3            Q3(c=Vout b=Vin e=$N_0002 )
+V_VCC           VCC(+=$N_0003 -=0 )
+V_-VCC          -VCC(+=0 -=$N_0002 )
+R_R1            R1(1=Vout 2=$N_0003 )
+I_IBQ           IBQ(+=0 -=Vin )
+V_Vs            Vs(+=$N_0001 -=0 )
+_    _(Vin=Vin)
+_    _(Vout=Vout)
+.ENDALIASES
+
+
+**** RESUMING Schematic3.cir ****
+.probe
+
+
+.END
+
+**** 11/10/18 12:52:22 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\sahand.sabour16\Desktop\Schematic3.sch
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222         
+               NPN             
+          IS   14.340000E-15 
+          BF  255.9          
+          NF    1            
+         VAF   74.03         
+         IKF     .2847       
+         ISE   14.340000E-15 
+          NE    1.307        
+          BR    6.092        
+          NR    1            
+          RB   10            
+          RC    1            
+         CJE   22.010000E-12 
+         MJE     .377        
+         CJC    7.306000E-12 
+         MJC     .3416       
+          TF  411.100000E-12 
+         XTF    3            
+         VTF    1.7          
+         ITF     .6          
+          TR   46.910000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 11/10/18 12:52:22 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\sahand.sabour16\Desktop\Schematic3.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  Vin)   -8.3281  ( Vout)    -.0047  ($N_0001)    0.0000                       
+
+($N_0002)   -9.0000                   ($N_0003)    9.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VCC       -3.002E-03
+    V_-VCC      -3.018E-03
+    V_Vs         0.000E+00
+
+    TOTAL POWER DISSIPATION   5.42E-02  WATTS
+
+
+**** 11/10/18 12:52:22 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\sahand.sabour16\Desktop\Schematic3.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** BIPOLAR JUNCTION TRANSISTORS
+
+
+NAME         Q_Q3      
+MODEL        Q2N2222   
+IB           1.68E-05 
+IC           3.00E-03 
+VBE          6.72E-01 
+VBC         -8.32E+00 
+VCE          9.00E+00 
+BETADC       1.79E+02 
+GM           1.15E-01 
+RPI          1.69E+03 
+RX           1.00E+01 
+RO           2.74E+04 
+CBE          8.44E-11 
+CBC          3.12E-12 
+CJS          0.00E+00 
+BETAAC       1.94E+02 
+CBX/CBX2     0.00E+00 
+FT/FT2       2.09E+08 
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+
